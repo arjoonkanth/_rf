@@ -1,0 +1,53 @@
+@import "normalize";
+
+body {
+    font-size: 14px;
+}
+
+.js-container {
+    width: 960px !important;
+}
+
+.container {
+    width: 520px;
+    margin: auto;
+}
+
+.grid {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid::after, 
+.grid::before 
+.grid:after, 
+.grid:before {
+    display: table;
+    content: " ";
+}
+
+.grid::after, 
+.grid:after {
+    clear: both;
+}
+
+::after, ::before,
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    width: 160px;
+    min-height: 60px;
+    background: #eee;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
